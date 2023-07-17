@@ -1,0 +1,210 @@
+aside {
+  width: 100%;
+  background: #1f1f1f;
+  padding: 5% 10% 12%;
+  color: #fff;
+}
+
+aside h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+aside .content {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+aside form {
+  width: 400px;
+}
+
+aside form fieldset {
+  border: 1px solid #1d40e8;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+aside form legend {
+  color: #1d40e8;
+  text-transform: capitalize;
+  padding: 0 5px;
+  margin-left: 10px;
+}
+
+aside form input,
+aside form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px 10px 10px;
+  color: #fff;
+}
+aside form textarea {
+  height: 100px;
+}
+aside form input::placeholder,
+aside form textarea::placeholder {
+  text-transform: capitalize;
+  color: #c4c4c4;
+  font-size: 12px;
+}
+
+aside form button {
+  margin-top: 10px;
+}
+
+aside .card {
+  width: 320px;
+  background: rgba(29, 64, 232, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+aside .card img {
+  width: 160px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  aside h2 {
+    margin-bottom: 40px;
+  }
+  aside .content {
+    justify-content: space-between;
+  }
+  aside form {
+    width: 50%;
+  }
+  aside form input,
+  aside form textarea {
+    font-size: 12px;
+  }
+  aside form textarea {
+    height: 100px;
+  }
+  aside form input::placeholder,
+  aside form textarea::placeholder {
+    font-size: 10px;
+  }
+  aside .card {
+    width: 280px;
+  }
+  aside .card img {
+    width: 140px;
+  }
+}
+@media (max-width: 1024px) {
+  aside h2 {
+    margin-bottom: 40px;
+  }
+  aside .content {
+    justify-content: space-between;
+  }
+  aside form {
+    width: 50%;
+  }
+  aside form input,
+  aside form textarea {
+    font-size: 12px;
+  }
+  aside form textarea {
+    height: 100px;
+  }
+  aside form input::placeholder,
+  aside form textarea::placeholder {
+    font-size: 10px;
+  }
+  aside .card {
+    width: 280px;
+  }
+  aside .card img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  aside .card {
+    width: 200px;
+  }
+  aside form {
+    width: 60%;
+  }
+}
+@media (max-width: 650px) {
+  aside .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  aside form {
+    width: 100%;
+  }
+  aside .card {
+    width: 80%;
+    height: 150px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+  aside .card img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 435px) {
+  aside .content {
+    display: flex;
+    flex-direction: column;
+  }
+  aside form {
+    width: 100%;
+  }
+  aside .card {
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+  aside .card img {
+    width: 120px;
+  }
+}
+@media (max-width: 435px) {
+  aside .content {
+    display: flex;
+    flex-direction: column;
+  }
+  aside form {
+    width: 100%;
+  }
+  aside .card {
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+  aside .card img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  aside .card {
+    width: 80%;
+    height: 280px;
+    padding: 10px 20px;
+  }
+  aside .card img {
+    width: 120px;
+  }
+}

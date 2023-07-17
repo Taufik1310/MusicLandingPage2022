@@ -1,0 +1,90 @@
+@import url("header.css");
+@import url("main.css");
+@import url("aside.css");
+@import url("footer.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c4c4c4;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background: #1d40e8;
+  padding: 5px 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid #1d40e8;
+}
+.btn:hover {
+  background: transparent;
+  transition: 0.3s;
+}
+.btn:active {
+  background: #1d40e8;
+  transform: scale(0.9);
+}
+
+@media (max-width: 812px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 5px 28px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 512px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}

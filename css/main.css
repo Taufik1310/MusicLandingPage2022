@@ -1,0 +1,232 @@
+main {
+  background: #0f1417;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 100px 0;
+}
+
+main article {
+  width: 80%;
+}
+
+main #about {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+main #about img {
+  width: 45%;
+  border-radius: 30px;
+}
+
+main #about .content {
+  width: 50%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main #benefits {
+  margin-bottom: 120px;
+}
+
+main #benefits h2 {
+  margin-bottom: 50px;
+}
+
+main #benefits .content {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main #benefits .benefit {
+  width: 32%;
+  margin: 0 0 25px;
+  overflow: auto;
+}
+
+main #benefits ion-icon {
+  font-size: 30px;
+  color: #1d40e8;
+  border: 2px solid #1d40e8;
+  border-radius: 50%;
+  padding: 10px;
+  float: left;
+}
+
+main #benefits p {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+main #benefits p::first-letter {
+  text-transform: uppercase;
+}
+
+main #plans h2 {
+  margin-bottom: 50px;
+}
+
+main #plans .cards {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main #plans .card {
+  width: 330px;
+  height: 450px;
+  background: transparent;
+  border: 1px solid #1d40e8;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+main #plans p::first-letter {
+  text-transform: uppercase;
+}
+
+main #plans .include {
+  display: inline-flex;
+  align-items: center;
+}
+
+main #plans ion-icon {
+  color: #1d40e8;
+  font-size: 30px;
+}
+
+main #plans .include p {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+main #plans .price {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main #plans hr {
+  border: 1px solid #c4c4c4;
+}
+
+main #plans .btn {
+  text-align: center;
+}
+
+@media (max-width: 1600px) {
+  main #plans h2 {
+    margin-bottom: 40px;
+  }
+  main #plans .cards {
+    justify-content: space-evenly;
+  }
+  main #plans .card {
+    width: 300px;
+    height: 420px;
+    margin-bottom: 30px;
+  }
+  main #plans ion-icon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  main article {
+    width: 85%;
+  }
+  main #about {
+    margin-bottom: 100px;
+  }
+  main #about img {
+    height: 280px;
+  }
+  main #about .content {
+    width: 50%;
+  }
+  main #benefits {
+    margin-bottom: 80px;
+  }
+  main #benefits h2 {
+    margin-bottom: 40px;
+  }
+  main #benefits .benefit {
+    width: 300px;
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  main article {
+    width: 90%;
+  }
+  main #about {
+    height: 500px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  main #about img {
+    width: 80%;
+  }
+  main #about .content {
+    width: 80%;
+    height: 40%;
+  }
+  main #benefits {
+    width: 70%;
+    margin-bottom: 80px;
+  }
+  main #benefits h2 {
+    margin-bottom: 40px;
+  }
+  main #benefits .benefit {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  main #benefits p {
+    font-size: 16px;
+    margin-left: 80px;
+    margin-top: 3%;
+  }
+  main #plans h2 {
+    margin-left: 60px;
+  }
+  main #plans .card {
+    width: 280px;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 512px) {
+  main #about img {
+    width: 100%;
+  }
+  main #about .content {
+    width: 100%;
+  }
+  main #benefits {
+    width: 90%;
+  }
+  main #plans h2 {
+    margin-left: 0;
+  }
+}

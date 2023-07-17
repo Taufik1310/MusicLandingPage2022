@@ -1,0 +1,211 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #1f1f1f;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  padding: 2% 8%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  width: 220px;
+}
+
+header nav .nav-link {
+  width: 50%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+header nav ul {
+  width: 70%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: #c4c4c4;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #c4c4c4;
+}
+header nav ul li:hover,
+header nav ul a:hover {
+  cursor: pointer;
+  color: #f7f7f7;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li:active {
+  transform: scale(0.9);
+}
+
+header nav .menu-toggle {
+  display: none;
+}
+header nav .menu-toggle:hover {
+  cursor: pointer;
+}
+
+header .content {
+  width: 550px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  top: 32%;
+  left: 8%;
+  z-index: 2;
+}
+
+header .notes {
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+  z-index: 2;
+}
+
+header .hero {
+  width: 320px;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+
+@media (max-width: 1124px) {
+  header nav .nav-link {
+    width: 60%;
+  }
+}
+
+@media (max-width: 912px) {
+  header nav .logo {
+    width: 200px;
+  }
+  header nav .nav-link {
+    width: 200px;
+  }
+  header nav ul {
+    width: 320px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -350px;
+    color: #fff;
+    padding: 100px 20px;
+    background-color: #1d40e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+    transition: all 0.8s ease;
+  }
+  header nav ul li {
+    margin: 22px;
+  }
+  header nav ul a {
+    color: #fff;
+  }
+  header nav ul li:hover,
+  header nav ul a:hover {
+    color: #c4c4c4;
+  }
+  header nav .menu-toggle {
+    display: block;
+    font-size: 40px;
+    z-index: 3;
+  }
+  .btn-download-appear {
+    z-index: 3 !important;
+    background-color: #8d94e1 !important;
+  }
+  .nav-appear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (max-width: 812px) {
+  header .content {
+    width: 500px;
+    height: 200px;
+  }
+  header nav .nav-link {
+    width: 180px;
+  }
+  header nav ul {
+    width: 280px;
+  }
+}
+
+@media (max-width: 512px) {
+  header nav {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  header nav ul {
+    width: 250px;
+  }
+  header .content {
+    width: 425px;
+    height: 180px;
+    left: 5%;
+    top: 60%;
+  }
+  header .notes {
+    left: 55%;
+    bottom: 2%;
+  }
+  header .content .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  header nav {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  header nav .logo {
+    width: 160px;
+  }
+  header nav ul {
+    width: 220px;
+  }
+  header .content {
+    width: 93%;
+    height: 160px;
+    left: 3%;
+    top: 60%;
+  }
+  header .content h1 {
+    font-size: 30px;
+  }
+  header .notes {
+    left: 40%;
+    bottom: 3%;
+  }
+  header .hero {
+    right: 0;
+  }
+}
